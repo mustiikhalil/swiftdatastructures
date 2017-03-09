@@ -17,3 +17,5 @@ class person{
 var bob: person? = person(name: "bob")
 
 bob = nil
+
+var now = true
