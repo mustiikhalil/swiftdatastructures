@@ -8,9 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+var userStack: Stack? = Stack <String> ()
 
-var userStack = Stack <String> ()
+print(userStack?.isEmpty)
+userStack?.push(value: "mustafa")
+userStack?.push(value: "meow")
+print(userStack?.isEmpty)
+userStack = nil
 
-userStack.push(value: "mustafa")
-userStack.push(value: "meow")
+print(userStack?.isEmpty)

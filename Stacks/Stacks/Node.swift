@@ -8,12 +8,16 @@
 
 import Foundation
 
-
+// generic Node class that would work with all the types
 class Node <T> {
-    
+
+
+    // private var so other classes can't easily change the data
     private var _value: T
     private var _nextNode: Node?
-    
+
+
+    // getter and setter for the values, and nodes
     var value: T{
         get{
             return _value
