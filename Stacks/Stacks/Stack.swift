@@ -8,7 +8,9 @@
 
 import Foundation
 
-
+enum NilError: Error{
+    case nilFound
+}
 
 // stack data structure implemented to be generic
 
@@ -42,20 +44,26 @@ class Stack <T>{
     }
 
     // This function returns and removes the top value
-    func popPeak() -> T?{
-        let currentNode = _top
+    func popPeak() throws -> T?{
+        guard let currentNode = _top else{
+            throw NilError.nilFound
+        }
         _top = _top?.nextNode
-        return currentNode?.value
+        return currentNode.value
+
     }
 
     // This function returns that top value without removing it
-    func peak() -> T?{
-        return _top?.value
+    func peak() throws -> T?{
+        guard let value = _top?.value else{
+            throw NilError.nilFound
+        }
+        return value
     }
 
 
     // This function removes the top without returning
     func pop() {
-        _top = _top?.nextNode
+            _top = _top?.nextNode
     }
 }
