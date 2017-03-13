@@ -15,14 +15,10 @@ import Foundation
 class Stack <T>{
     
     private var _top: Node<T>?
-    
+
+    // initialize the stack
     init() {
         
-    }
-
-    //
-    deinit{
-        print("Stack Done Emptying")
     }
 
     // checks if the stack is empty

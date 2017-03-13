@@ -10,10 +10,12 @@ import Foundation
 
 var userStack: Stack? = Stack <String> ()
 
-print(userStack?.isEmpty)
-userStack?.push(value: "mustafa")
+print((userStack?.isEmpty)!)
+//userStack?.push(value: "mustafa")
 userStack?.push(value: "meow")
-print(userStack?.isEmpty)
-userStack = nil
+print((userStack?.isEmpty)!)
+print((userStack?.popPeak())!)
 
-print(userStack?.isEmpty)
+print((userStack?.isEmpty)!)
+
+userStack = nil
