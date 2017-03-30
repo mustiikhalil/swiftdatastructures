@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Error handling Enum
 enum NilError: Error{
     case nilFound
 }
