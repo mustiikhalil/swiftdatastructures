@@ -23,6 +23,7 @@ class Queue <T> {
 
 
     // checks if the Queue is empty
+    
     var isEmpty: Bool{
         get{
             if (_start == nil){
@@ -42,6 +43,7 @@ class Queue <T> {
     /** Dequeue's the first item that is entered the Queue
         Throws an Error incase the queue is empty
     */
+    
     func deQueue() throws -> T {
        guard let returnValue = _start?.value else{
            throw Errors.nilValue
