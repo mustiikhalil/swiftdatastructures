@@ -6,7 +6,7 @@
 import Foundation
 
 let tree1 = TreeNode(value: 3, left: nil, right: nil)
-//let tree2 = TreeNode(value: 6, left: nil, right: nil)
+let tree2 = TreeNode(value: 6, left: nil, right: nil)
 
 let tree3 = TreeNode(value: 5, left: tree1, right: nil)
 
@@ -21,3 +21,4 @@ var x = binarTree.root
 
 print(binarTree.binarySearch(searchValue: 6, tree: binarTree.root))
 
+binarTree.convertBST(binarTree.root)

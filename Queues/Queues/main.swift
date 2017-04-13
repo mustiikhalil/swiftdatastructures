@@ -37,3 +37,4 @@ print("------")
 
 print(list.isEmpty)
 
+try print("This is dequeued \(list.deQueue())")

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FF5E1E8CC030D8A1EDEFD7BF"
+               BuildableName = "abstractSyntaTree"
+               BlueprintName = "abstractSyntaTree"
+               ReferencedContainer = "container:abstractSyntaTree.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FF5E1E8CC030D8A1EDEFD7BF"
+            BuildableName = "abstractSyntaTree"
+            BlueprintName = "abstractSyntaTree"
+            ReferencedContainer = "container:abstractSyntaTree.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
