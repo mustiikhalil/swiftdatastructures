@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8AED07541E3EF4150088C8BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED07531E3EF4150088C8BA /* main.swift */; };
+		FAF5E72E1F2E3FB000C5DEA5 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		8AED07501E3EF4150088C8BA /* BinarySearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySearch; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AED07531E3EF4150088C8BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				8AED07531E3EF4150088C8BA /* main.swift */,
+				FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */,
 			);
 			path = BinarySearch;
 			sourceTree = "<group>";
@@ -89,7 +92,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Mustafa Khalil";
 				TargetAttributes = {
 					8AED074F1E3EF4150088C8BA = {
@@ -121,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF5E72E1F2E3FB000C5DEA5 /* BinarySearch.swift in Sources */,
 				8AED07541E3EF4150088C8BA /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +217,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -253,6 +258,7 @@
 				8AED07591E3EF4150088C8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
