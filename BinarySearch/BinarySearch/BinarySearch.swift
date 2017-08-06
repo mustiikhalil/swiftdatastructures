@@ -15,10 +15,12 @@ import Foundation
  */
 
 func binarySearch <T: Comparable>(Array: [T], K: T, left: Int, right: Int) -> Int {
-    
+    // left index can not be less than 0
+    // right index can not exceed the length of the Array
     if left < 0 || right > Array.count - 1 {
         return -1
     }
+    // means the element is not in the Array
     if right < left {
         return -1
     }
