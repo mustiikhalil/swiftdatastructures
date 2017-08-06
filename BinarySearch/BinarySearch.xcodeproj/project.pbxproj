@@ -11,6 +11,7 @@
 		FAF5E72E1F2E3FB000C5DEA5 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */; };
 		FAFA7E611F3767E000AE810A /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E601F3767E000AE810A /* BinarySearchTests.swift */; };
 		FAFA7E661F3769CE00AE810A /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */; };
+		FAFA7E681F37754200AE810A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E671F37754200AE810A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		FAFA7E5E1F3767E000AE810A /* BinarySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinarySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFA7E601F3767E000AE810A /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		FAFA7E621F3767E000AE810A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFA7E671F37754200AE810A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		8AED07471E3EF4150088C8BA = {
 			isa = PBXGroup;
 			children = (
+				FAFA7E671F37754200AE810A /* README.md */,
 				8AED07521E3EF4150088C8BA /* BinarySearch */,
 				FAFA7E5F1F3767E000AE810A /* BinarySearchTests */,
 				8AED07511E3EF4150088C8BA /* Products */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFA7E681F37754200AE810A /* README.md in Sources */,
 				FAF5E72E1F2E3FB000C5DEA5 /* BinarySearch.swift in Sources */,
 				8AED07541E3EF4150088C8BA /* main.swift in Sources */,
 			);
