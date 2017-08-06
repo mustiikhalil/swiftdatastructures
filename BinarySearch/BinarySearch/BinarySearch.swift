@@ -15,6 +15,10 @@ import Foundation
  */
 
 func binarySearch <T: Comparable>(Array: [T], K: T, left: Int, right: Int) -> Int {
+    
+    if left < 0 || right > Array.count - 1 {
+        return -1
+    }
     if right < left {
         return -1
     }

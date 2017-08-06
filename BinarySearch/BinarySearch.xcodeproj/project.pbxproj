@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8AED07541E3EF4150088C8BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED07531E3EF4150088C8BA /* main.swift */; };
 		FAF5E72E1F2E3FB000C5DEA5 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */; };
+		FAFA7E611F3767E000AE810A /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E601F3767E000AE810A /* BinarySearchTests.swift */; };
+		FAFA7E661F3769CE00AE810A /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +29,20 @@
 		8AED07501E3EF4150088C8BA /* BinarySearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySearch; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AED07531E3EF4150088C8BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		FAFA7E5E1F3767E000AE810A /* BinarySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinarySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFA7E601F3767E000AE810A /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
+		FAFA7E621F3767E000AE810A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8AED074D1E3EF4150088C8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA7E5B1F3767E000AE810A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				8AED07521E3EF4150088C8BA /* BinarySearch */,
+				FAFA7E5F1F3767E000AE810A /* BinarySearchTests */,
 				8AED07511E3EF4150088C8BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8AED07501E3EF4150088C8BA /* BinarySearch */,
+				FAFA7E5E1F3767E000AE810A /* BinarySearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +77,15 @@
 				FAF5E72D1F2E3FB000C5DEA5 /* BinarySearch.swift */,
 			);
 			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		FAFA7E5F1F3767E000AE810A /* BinarySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA7E601F3767E000AE810A /* BinarySearchTests.swift */,
+				FAFA7E621F3767E000AE810A /* Info.plist */,
+			);
+			path = BinarySearchTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,19 +108,40 @@
 			productReference = 8AED07501E3EF4150088C8BA /* BinarySearch */;
 			productType = "com.apple.product-type.tool";
 		};
+		FAFA7E5D1F3767E000AE810A /* BinarySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFA7E651F3767E000AE810A /* Build configuration list for PBXNativeTarget "BinarySearchTests" */;
+			buildPhases = (
+				FAFA7E5A1F3767E000AE810A /* Sources */,
+				FAFA7E5B1F3767E000AE810A /* Frameworks */,
+				FAFA7E5C1F3767E000AE810A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinarySearchTests;
+			productName = BinarySearchTests;
+			productReference = FAFA7E5E1F3767E000AE810A /* BinarySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8AED07481E3EF4150088C8BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Mustafa Khalil";
 				TargetAttributes = {
 					8AED074F1E3EF4150088C8BA = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = S5LE5TDLUP;
+						ProvisioningStyle = Automatic;
+					};
+					FAFA7E5D1F3767E000AE810A = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,9 +159,20 @@
 			projectRoot = "";
 			targets = (
 				8AED074F1E3EF4150088C8BA /* BinarySearch */,
+				FAFA7E5D1F3767E000AE810A /* BinarySearchTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFA7E5C1F3767E000AE810A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AED074C1E3EF4150088C8BA /* Sources */ = {
@@ -126,6 +181,15 @@
 			files = (
 				FAF5E72E1F2E3FB000C5DEA5 /* BinarySearch.swift in Sources */,
 				8AED07541E3EF4150088C8BA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA7E5A1F3767E000AE810A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA7E661F3769CE00AE810A /* BinarySearch.swift in Sources */,
+				FAFA7E611F3767E000AE810A /* BinarySearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +303,33 @@
 			};
 			name = Release;
 		};
+		FAFA7E631F3767E000AE810A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BinarySearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokgozmusa.BinarySearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAFA7E641F3767E000AE810A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BinarySearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokgozmusa.BinarySearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -256,6 +347,15 @@
 			buildConfigurations = (
 				8AED07581E3EF4150088C8BA /* Debug */,
 				8AED07591E3EF4150088C8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFA7E651F3767E000AE810A /* Build configuration list for PBXNativeTarget "BinarySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA7E631F3767E000AE810A /* Debug */,
+				FAFA7E641F3767E000AE810A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
